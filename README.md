@@ -64,9 +64,9 @@ Before running this project, make sure you have the following installed:
 6. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app.
 
 ## Usage
-    - Register for a new account or log in if you already have one.
-    - Once logged in, you can perform CRUD operations on the data.
-    - Certain routes are protected and require authentication.
+- Register for a new account or log in if you already have one.
+- Once logged in, you can perform CRUD operations on the data.
+- Certain routes are protected and require authentication.
 
 ## Deployment
 To deploy the application, you can follow the deployment instructions provided by Next.js and Firebase.
