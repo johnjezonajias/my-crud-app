@@ -20,8 +20,8 @@ const LoginPage: React.FC = () => {
   }, [router]);
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="h-full flex flex-col items-center justify-center mt-12">
+      <h1 className="text-3xl font-bold">Login</h1>
       <LoginForm />
     </div>
   );

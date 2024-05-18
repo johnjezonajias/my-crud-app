@@ -1,5 +1,3 @@
-'use client'
-
 import { NextApiRequest, NextApiResponse } from 'next';
 import { ObjectId } from 'mongodb';
 import clientPromise from '../../lib/mongodb';

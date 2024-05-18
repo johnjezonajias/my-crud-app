@@ -20,8 +20,8 @@ const SignupPage: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Signup</h1>
+    <div className="h-full flex flex-col items-center justify-center mt-12">
+      <h1 className="text-3xl font-bold">Signup</h1>
       <SignupForm />
     </div>
   );

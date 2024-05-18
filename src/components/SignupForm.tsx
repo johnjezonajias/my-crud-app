@@ -27,38 +27,40 @@ const SignupForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-        className="block w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-        className="block w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-      />
-      <input
-        type="password"
-        placeholder="Confirm Password"
-        value={confirmPassword}
-        onChange={(e) => setConfirmPassword(e.target.value)}
-        required
-        className="block w-full text-black px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-      />
-      <button
-        type="submit"
-        className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none"
-      >
-        Signup
-      </button>
-    </form>
+    <div className="w-[600px] p-8">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="bg-gray-400 block w-full text-black px-4 py-2 mb-4 rounded-md focus:outline-none focus:border-blue-500 placeholder-gray-600"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          className="bg-gray-400 block w-full text-black px-4 py-2 mb-4 rounded-md focus:outline-none focus:border-blue-500 placeholder-gray-600"
+        />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
+          className="bg-gray-400 block w-full text-black px-4 py-2 mb-4 rounded-md focus:outline-none focus:border-blue-500 placeholder-gray-600"
+        />
+        <button
+          type="submit"
+          className="w-full px-4 py-3 bg-gray-800 text-sm text-gray-300 uppercase rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Signup
+        </button>
+      </form>
+    </div>
   );
 };
 

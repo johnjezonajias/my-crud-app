@@ -31,29 +31,29 @@ export const MainNavigation = () => {
         <div className="flex items-center justify-between gap-x-10">
             <div className="w-auto">
                 {user ? (
-                    <span className="text-gray-500">Welcome, {user.email}</span>
+                    <span className="text-gray-500">You&apos;re logged in as <span className="text-gray-300 underline">{user.email}</span></span>
                 ) : (
-                    <span className="text-gray-500">Welcome! Please <Link href="/signup" className="text-blue-500">Signup</Link></span>
+                    <span className="text-gray-500">Hello, please <Link href="/signup" className="text-gray-200">signup</Link> or <Link href="/login" className="text-gray-200">login</Link>.</span>
                 )}
             </div>
             <div className="w-auto flex items-end gap-x-10">
-                <Link href="/" className="text-blue-500">
+                <Link href="/" className="text-md text-gray-300 hover:text-gray-600 font-medium transition duration-300 uppercase">
                     Home
                 </Link>
                 {!user ? (
                     <>
-                        <Link href="/login" className="text-blue-500">
+                        <Link href="/login" className="text-md text-gray-300 hover:text-gray-600 font-medium transition duration-300 uppercase">
                             Login
                         </Link>
                     </>
                 ) : (
                     <>
-                        <Link href="/dashboard" className="text-blue-500">
+                        <Link href="/dashboard" className="text-md text-gray-300 hover:text-gray-600 font-medium transition duration-300 uppercase">
                             Dashboard
                         </Link>
                         <button
                             onClick={handleLogout}
-                            className="text-red-500 hover:text-red-700 font-medium transition duration-300"
+                            className="text-md text-red-500 hover:text-red-700 font-medium transition duration-300 uppercase"
                             >
                             Logout
                         </button>
